@@ -1,3 +1,3 @@
-FROM mariadb:10.9.4
+FROM mariadb:11.2.2
 
 COPY ./jkpgcity-tables.sql /docker-entrypoint-initdb.d/
