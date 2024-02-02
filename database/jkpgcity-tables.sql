@@ -2,16 +2,16 @@ USE jkpg;
 
 -- Create store table
 
-DROP TABLE IF EXISTS STORES; -- We drop the table if it exists to avoid errors this might change in the future
+DROP TABLE IF EXISTS stores; -- We drop the table if it exists to avoid errors this might change in the future
 
-CREATE TABLE STORES (
+CREATE TABLE stores (
   id INTEGER PRIMARY KEY AUTO_INCREMENT,
   name TEXT NOT NULL,
   url TEXT,
   district TEXT
 );
 
-INSERT INTO STORES(name,url,district) VALUES
+INSERT INTO stores(name,url,district) VALUES
 ('Albins Skomakeri','albins-skomakeri.se/','Mullsjö'),
  ('Åhlens','ahlens.se/varuhus/jonkoping?utm_source=google&utm_medium=organic&utm_campaign=business_profile&utm_content=website_link','Öster')
 ,('Akademibokhandeln','akademibokhandeln.se/butik/jonkoping-c','Öster')
@@ -63,7 +63,7 @@ INSERT INTO STORES(name,url,district) VALUES
 ,('Godis och Tobakshörnan',NULL,'Öster')
 ,('Golden athlete','goldenathlete.se/sv/butiker-2','Öster')
 ,('Grmawit Store','grmawit.com/','Väster');
-INSERT INTO STORES(name,url,district) VALUES
+INSERT INTO stores(name,url,district) VALUES
  ('Guldsmedjan Snarberg','guldsmedjan-snarberg.se','Väster')
 ,('Hälsokraft','halsokraft.se/butiker?butik=503','Öster')
 ,('Hemköp','hemkop.se/butik/4674','Väster')
@@ -114,7 +114,7 @@ INSERT INTO STORES(name,url,district) VALUES
 ,('Partyland','partyland.party/butiker/','Väster')
 ,('Planta Blommor','plantablommor.se/?gclid=Cj0KCQjwteOaBhDuARIsADBqRehsWXSRNHjeGnPn_AyambJZLmNntWxsMnUkANIHdme0NoDtc2Xi8mgaAicoEALw_wcB#.Y2p1tuzMLPZ','Väster')
 ,('Pleasure erotic shop','pleasureeroticshop.se/','Väster');
-INSERT INTO STORES(name,url,district) VALUES
+INSERT INTO stores(name,url,district) VALUES
  ('PMU Second Hand Jönköping City','pmu.se/stores/jonkopingcity/','Öster')
 ,('Pressbyrån Östra storgatan','pressbyran.se/kontakt/hitta-butik/','Öster')
 ,('Pressbyrån Resecentrum','pressbyran.se/kontakt/hitta-butik/','Resecentrum')

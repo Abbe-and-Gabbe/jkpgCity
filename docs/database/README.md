@@ -6,7 +6,7 @@ This project uses version `11.2.2` of MARIADB and is run using a docker containe
 
 The current tables in the project are:
 
-### STORES
+### stores
 
 | name | datatype |
 |--|--|
