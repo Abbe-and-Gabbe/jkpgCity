@@ -2,10 +2,18 @@ const express = require('express');
 const app = express();
 const PORT = 8080;
 
-app.get('/', (req, res) => {
-    res.send('Hello World!');
+const storeModel = require('./src/models/storeModel.js');
+const model = new storeModel();
+
+app.get('/', async(req, res) => {
+    const stores = await model.getAllStores();
+    res.send(stores);
 });
 
-app.listen(PORT, () => {
-    console.log('Server is running on port: ${PORT}');
-});
+const server = async() => {
+    app.listen(PORT, () => {
+        console.log('Server is running on port: ${PORT}');
+    });
+}
+
+server();
