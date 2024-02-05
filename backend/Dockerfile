@@ -8,4 +8,4 @@ RUN npm ci
 
 COPY ./ ./
 
-CMD node --watch ./index.js
+CMD node --watch ./app.js
