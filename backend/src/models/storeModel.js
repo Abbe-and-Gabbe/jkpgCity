@@ -28,6 +28,13 @@ class StoreModel {
         const result = await this.pool.query(sql);
         return result;
     }
+
+
+    async getStoreById(storeId) {
+        const sql = 'SELECT * FROM stores WHERE id = ?';
+        const result = await this.pool.query(sql, [storeId]);
+        return result;
+    }
 }
 
 module.exports = StoreModel;
