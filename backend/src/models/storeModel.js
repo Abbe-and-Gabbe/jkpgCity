@@ -35,6 +35,24 @@ class StoreModel {
         const result = await this.pool.query(sql, [storeId]);
         return result;
     }
+
+    async createStore(name, url, district) {
+        const sql = 'INSERT INTO stores (name, url, district) VALUES (?, ?, ?)';
+        await this.pool.query(sql, [name, url, district]);
+    }
+
+    async deleteStore(storeId) {
+        const sql = 'DELETE FROM stores WHERE id = ?';
+        await this.pool.query(sql, [storeId]);
+    }
+
+    async updateStore(storeId, name, url, district) {
+        const sql = 'UPDATE stores SET name = ?, url = ?, district = ? WHERE id = ?';
+        await this.pool.query(sql, [name, url, district, storeId]);
+    }
+
+
+
 }
 
 module.exports = StoreModel;
