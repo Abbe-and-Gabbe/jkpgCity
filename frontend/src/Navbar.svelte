@@ -1,13 +1,12 @@
-<!-- Navbar.svelte -->
 <script>
-    let isCollapsed = true; // Initially collapsed
+    let isCollapsed = true; 
   
     function toggleNavbar() {
       isCollapsed = !isCollapsed;
     }
   </script>
   
-<!-- Navbar.svelte -->
+
 <nav class="bg-white dark:bg-gray-900 fixed w-full z-20 top-0 start-0 border-b border-gray-200 dark:border-gray-600">
     <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
       <span class="text-2xl font-semibold whitespace-nowrap dark:text-white ml-2">JKPGCITY</span> <!-- Added ml-2 class -->
