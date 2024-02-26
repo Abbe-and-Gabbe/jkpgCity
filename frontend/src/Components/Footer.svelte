@@ -6,7 +6,7 @@
             <a href="#" class="hover:underline me-4 md:me-6">Home</a>
         </li>
         <li>
-            <a href="#" class="hover:underline me-4 md:me-6">Venues</a>
+            <a href="/Venues" class="hover:underline me-4 md:me-6">Venues</a>
         </li>
         <li>
             <a href="#" class="hover:underline me-4 md:me-6">Times</a>

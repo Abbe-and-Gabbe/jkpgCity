@@ -6,13 +6,18 @@
   export let url = "";
 </script>
 
+<style>
+  .main-container {
+    margin-top: 10px; 
+  }
+</style>
+
 <Router {url}>
   <Navbar />
-  <main class="dark:bg-slate-900 bg-slate-100 dark:text-white p-12 shadow-xl h-full">
+  <main class="dark:bg-slate-900 bg-slate-100 dark:text-white p-12 shadow-xl h-full main-container">
     <Route path="/Venues">
       <Venues/>
     </Route>
   </main>
 </Router>
 <Footer/>
-
