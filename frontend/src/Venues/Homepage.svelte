@@ -1,32 +1,71 @@
-<script>
 
-</script>
+<!--BOD
+<main class="bg-black flex justify-center items-center pt-200 min-h-4 pt-20"> -->
 
-<main class="flex flex-col flex-1 p-4">
-    <section id="pagetop" class="grid grid-cols-1 lg:grid-cols-2 gap-10 py-8 sm:py-14">
 
-        <div class="flex flex-col lg:justify-center text-center lg:text-left gap-6 md:gap-8 lg:gap-10">
-            <h2 class="font-semibold text-4xl sm:text-5xl md:text-6xl">
-                Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sint ad consequuntur fugit iure officiis quaerat at eum voluptas incidunt reiciendis saepe, vitae, inventore laboriosam ullam exercitationem beatae distinctio! Libero, repudiandae.
-            </h2>
-            <p class="text-base sm:text-lg md:text-xl">
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ullam corrupti temporibus doloribus porro. Quos quo fugit perferendis qui, tempore possimus, placeat aliquid nihil modi deserunt labore iure quaerat illo nisi.
-            </p>
-            <a 
-                class="mx-auto lg:mr-auto text-base sm:text-lg md:text-xl relative overflow-hidden px-6 py-3 group rounded-full bg-white text-slate-950">
+<body class="pt-16">
 
+
+    <!--SECTION 1-->
+    <section class="bg-blue-100 max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 h-auto">
+
+        <img src="frontend/src/Venues/img/jkpgcity1.jpg" alt="city of jönköping">
+        <h1>Section 1</h1>
+        <p>Image and Title some text some text some text</p>
+
+    </section>
+
+
+    <!--SECTION 2-->
+    <section class="bg-blue-300 max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 h-auto">
+
+        <img src="" alt="image 1">
+        <img src="" alt="image 2">
+        <img src="" alt="image 3">
+
+    </section>
+
+
+    <!--SECTION 3-->
+    <section class="bg-blue-500 max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 h-auto">
+
+        <h1>Öppettider</h1>
+        <p>Öppettider, some text some text, button</p>
+
+    </section>
+
+
+    <!--SECTION 4-->
+    <section class="bg-blue-700 max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 h-auto">
+
+        <h1>Social Media</h1>
+        <p>Social media links, facebook, instagram, linkedin, tiktok</p>
+
+    </section>
+
+
+    <!--SECTION 5-->
+    <section class="bg-blue-900 max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 h-auto">
+
+        <h1>JKPGCITY</h1>
+        <ul>
+            <li>Jönköping City AB</li>
+            <li>c/o Jönköping kommun</li>
+            <li>Rådhusparken 1</li>
+            <li>551 89 Jönköping</li>
+            <br>
+            <li>Växel: 036-16 40 74</li>
+            <br>
+            <li>Besöksadress: Rådhuset, entreplan</li>
+            <a href="">
+                <p>hitta hit</p>
             </a>
-        </div>
+            <br>
+            <li>info@jkpgcity.se</li>
+        </ul>
 
-        <div>
-
-        </div>
-
-        <div>
-            
-        </div>
-
-    </section> 
-</main>
+    </section>
 
 
+
+</body>
