@@ -1,25 +1,12 @@
-<!-- @import url('https://fonts.googleapis.com/css?family=Poppins:200,300,400,500,600,700,800,900&display=swap'); -->
-
-<script>
-    let isCollapsed = true; 
-  
-    function toggleNavbar() {
-      isCollapsed = !isCollapsed;
-    }
-  </script>
 
 
-<!--BOD
-<main class="bg-black flex justify-center items-center pt-200 min-h-4 pt-20"> -->
-  
-
-<body class="pt-16">
+<body class="pt-16 pb-16">
 
 
     <!--SECTION 1-->
     <section class="bg-blue-100 max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 h-auto">
 
-        <!--<img src="jkpgcity1.jpg" alt="city of jönköping">-->
+        <img src="frontend/img/jkpgcity1.jpg" alt="city of jönköping">
         <div class="bg-black p-96 ml-24">
 
         </div>
@@ -35,13 +22,13 @@
 
     <!--SECTION 2-->
     <section class="bg-blue-300 max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 h-auto">
+        
+        <img src="/home/salee/project1/jkpgCity/frontend/img/jkpgcity1.jpg" alt="image 1">
         <!-- 
-        <img src="" alt="image 1">
-        <img src="" alt="image 2">
-        <img src="" alt="image 3">
+        lägga in bilder ist för div
         -->
         <div class="bg-black p-72 ml-24">
-
+        
         </div>
 
         <div class="bg-black p-72 ml-24">
@@ -55,29 +42,8 @@
 
     </section>
 
-
+    
     <!--SECTION 3-->
-    <section class="bg-blue-500 max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 h-auto">
-
-        <h1 class="w-full text-6xl p-2">
-            Öppettider
-        </h1>
-
-        <p class="w-full text-4xl p-2">Öppettider, some text some text, button</p>
-
-        <!--Från Gabbe-->
-        <div class="items-center justify-between w-full md:flex md:w-auto md:order-1">
-            <ul class="flex flex-col p-4 md:p-0 mt-4 font-medium border border-gray-100 rounded-lg bg-gray-50 md:space-x-8 rtl:space-x-reverse md:flex-row md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
-                <li>
-                  <a href="#" class="block py-2 px-3 text-gray-900 rounded hover:bg-gray-100 md:hover:bg-transparent md:hover:text-blue-700 md:p-0 md:dark:hover:text-blue-500 dark:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent dark:border-gray-700">Klicka här --> </a>
-                </li>
-            </ul>
-        </div>
-
-    </section>
-
-
-    <!--SECTION 4-->
     <section class="bg-blue-700 max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 h-auto">
 
         <h1>Social Media</h1>
@@ -119,7 +85,7 @@
     </section>
 
 
-    <!--SECTION 5-->
+    <!--SECTION 4-->
     <section class="bg-blue-900 max-w-screen flex flex-wrap items-center justify-between mx-auto p-4 h-auto">
 
         <h1 class="w-full">JKPGCITY</h1>
