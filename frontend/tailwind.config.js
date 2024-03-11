@@ -2,8 +2,11 @@
 export default {
   content: ['./src/**/*.{html,js,svelte,ts}'],
   theme: {
-    extend: {},
+    extend: {
+      spacing: {
+        '2.5': '0.625rem', 
+      },
+    },
   },
   plugins: [],
 }
-
