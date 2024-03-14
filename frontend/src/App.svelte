@@ -9,10 +9,10 @@
 
 
 
-  <Router>
+  <Router {url}>
     <Navbar/>
     <div class="mt-2.5">
-      <Route path="stores" component={Stores} /> 
+      <Route path="/stores" component={Stores} /> 
     </div>
     <Footer/>
   </Router>
