@@ -1,16 +1,26 @@
 <script>
   import { onMount } from 'svelte';
   export let id;
-  let specStore;
+  let specStore = null; 
+  let isLoading = true; 
 
   onMount(() => {
     fetch(`http://localhost:8080/stores/${id}`)
       .then((res) => res.json())
       .then((data) => {
-        specStore = data.map(item => ({
-          ...item,
-          url: item.url.startsWith('http://') || item.url.startsWith('https://') ? item.url : `https://${item.url}`,
-        }));
+        if (data && data.length > 0) {
+          specStore = data.map(item => ({
+            ...item,
+            url: item.url.startsWith('http://') || item.url.startsWith('https://') ? item.url : `https://${item.url}`,
+          }));
+        } else {
+          specStore = []; 
+        }
+        isLoading = false; 
+      })
+      .catch((error) => {
+        console.error('Failed to fetch store:', error);
+        isLoading = false; 
       });
   });
 </script>
