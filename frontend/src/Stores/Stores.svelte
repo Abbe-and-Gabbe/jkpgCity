@@ -1,8 +1,9 @@
 <script>
   import { onMount } from 'svelte';
+  import { Link } from "svelte-routing";
   let stores = [];
-  let currentPage = parseInt(localStorage.getItem('currentPage'), 10) || 1;
-  const storesPerPage = 5;
+  let currentPage =  1;
+  const storesPerPage = 6 ;
   let totalPages = 0;
   let visibleStores = [];
 
@@ -48,11 +49,12 @@
 <div class="flex flex-col items-center">
   {#each visibleStores as store}
     <div class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white m-2 p-4 rounded-lg shadow-md w-full md:w-1/2">
-      <a href="{store.url}" target="_blank" class="text-lg font-bold hover:underline">{store.name}</a>
+      <Link to={`/stores/${store.id}`} class="text-lg font-bold hover:underline">{store.name}</Link>
       <p>District: {store.district}</p>
     </div>
   {/each}
 </div>
+
 
 
 

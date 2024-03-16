@@ -12,11 +12,5 @@
         <li>
             <a href="/stores" use:link class="hover:underline me-4 md:me-6">Stores</a>
         </li>
-        <li>
-            <a href="#"  use:link class="hover:underline me-4 md:me-6">Times</a>
-        </li>
-        <li>
-            <a href="#"  use:link class="hover:underline">About</a>
-        </li>
     </ul>
 </footer>
