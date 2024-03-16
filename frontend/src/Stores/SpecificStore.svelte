@@ -40,5 +40,5 @@
     </div>
   {/each}
 {:else}
-  <p>Loading store details...</p>
+  <p>Not Available!</p>
 {/if}
