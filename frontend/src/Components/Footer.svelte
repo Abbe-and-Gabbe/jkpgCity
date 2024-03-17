@@ -10,13 +10,7 @@
             <a href="/" use:link  class="hover:underline me-4 md:me-6">Home</a>
         </li>
         <li>
-            <a href="/stores"  class="hover:underline me-4 md:me-6">Stores</a>
-        </li>
-        <li>
-            <a href="#"   class="hover:underline me-4 md:me-6">Times</a>
-        </li>
-        <li>
-            <a href="#"   class="hover:underline">About</a>
+            <a href="/stores" use:link class="hover:underline me-4 md:me-6">Stores</a>
         </li>
     </ul>
 </footer>
