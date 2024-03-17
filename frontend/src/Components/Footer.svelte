@@ -7,7 +7,7 @@
     </span>
     <ul class="flex flex-wrap items-center mt-3 text-sm font-medium text-gray-500 dark:text-gray-400 sm:mt-0">
         <li>
-            <a href="#"  use:link class="hover:underline me-4 md:me-6">Home</a>
+            <a href="/" use:link  class="hover:underline me-4 md:me-6">Home</a>
         </li>
         <li>
             <a href="/stores" use:link class="hover:underline me-4 md:me-6">Stores</a>
