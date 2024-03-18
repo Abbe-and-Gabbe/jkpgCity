@@ -41,6 +41,12 @@ app.post('/stores', async (req, res) => {
     if (!name) {
         return res.status(400).send('Name is required');
     }
+    if (!url) {
+        return res.status(400).send('URL is required');
+    }
+    if (!district) {
+        return res.status(400).send('District is required');
+    }
     try {
         const result = await model.createStore(name, url, district);
         res.status(201).send('Store created successfully');

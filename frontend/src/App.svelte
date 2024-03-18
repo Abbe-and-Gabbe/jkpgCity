@@ -5,6 +5,7 @@
   import Stores from './Stores/Stores.svelte';
   import SpecificStore from './Stores/SpecificStore.svelte';
   import { Router, Link, Route } from "svelte-routing";
+    import CreateStore from './Stores/CreateStore.svelte';
   export let url = "";
 </script>
 
@@ -13,6 +14,7 @@
   <div class="mt-2.5">
     <Route path="/" component={Homepage} />  
     <Route path="/stores" component={Stores} />
+    <Route path="/stores/create" component={CreateStore} />
     <Route path="/stores/:id" let:params>
       <SpecificStore id={params.id} />
     </Route>  </div>
