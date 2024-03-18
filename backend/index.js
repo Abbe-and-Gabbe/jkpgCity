@@ -49,7 +49,8 @@ app.post('/stores', async (req, res) => {
     }
     try {
         const result = await model.createStore(name, url, district);
-        res.status(201).send('Store created successfully');
+        await model.createStore(name, url, district);
+        res.status(201).send(result);
     } catch (error) {
         console.error('Error creating store:', error);
         res.status(500).send('Internal Server Error');

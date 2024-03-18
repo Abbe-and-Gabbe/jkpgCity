@@ -47,6 +47,11 @@
 
 
 <div class="flex flex-col items-center">
+  <h1 class="text-3xl font-bold my-4">Stores</h1>
+  <Link to="/stores/create" class="bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Create a new store</Link>
+</div>
+
+<div class="flex flex-col items-center">
   {#each visibleStores as store}
     <div class="bg-gray-50 dark:bg-gray-900 text-gray-800 dark:text-white m-2 p-4 rounded-lg shadow-md w-full md:w-1/2">
       <Link to={`/stores/${store.id}`} class="text-lg font-bold hover:underline">{store.name}</Link>

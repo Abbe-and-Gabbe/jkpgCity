@@ -43,17 +43,16 @@
                     throw new Error('Failed to create store');
                 }
                 console.log('Response:', response);
+                // Show success message and redirect to the stores page
+                alert('Store created successfully');
                 window.location.href = '/stores';
+
                 return response.json();
             })
             .then((data) => {
                 console.log('Success:', data);
-                // Redirect to the stores page
-                window.location.href = '/stores';
             })
             .catch((error) => {
-                console.error('Error:', error.message);
-
                 validateForm();
             });
     }

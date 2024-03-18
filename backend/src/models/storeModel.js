@@ -38,7 +38,12 @@ class StoreModel {
 
     async createStore(name, url, district) {
         const sql = 'INSERT INTO stores (name, url, district) VALUES (?, ?, ?)';
-        await this.pool.query(sql, [name, url, district]);
+        await this.pool.query(sql, [name, url, district]).then((result) => {
+            // Get the ID of the newly created store
+            const id = result.insertId;
+            // Return the ID of the newly created store
+            return id;
+        });
     }
 
     async deleteStore(storeId) {
