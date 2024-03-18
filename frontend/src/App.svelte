@@ -6,6 +6,8 @@
   import SpecificStore from './Stores/SpecificStore.svelte';
   import { Router, Link, Route } from "svelte-routing";
     import CreateStore from './Stores/CreateStore.svelte';
+    import EditStore from './Stores/EditStore.svelte';
+
   export let url = "";
 </script>
 
@@ -17,7 +19,11 @@
     <Route path="/stores/create" component={CreateStore} />
     <Route path="/stores/:id" let:params>
       <SpecificStore id={params.id} />
-    </Route>  </div>
+    </Route>
+    <Route path="/stores/:id/edit" let:params>
+      <EditStore id={params.id} />
+    </Route>
+  </div>
   <Footer/>
 </Router>
 
