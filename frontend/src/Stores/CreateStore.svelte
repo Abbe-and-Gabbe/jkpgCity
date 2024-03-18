@@ -58,7 +58,8 @@
     }
 </script>
 
-<main class="max-w-md mx-auto">
+<main class="p-4">
+    <h1 class="text-2xl font-bold mb-4">Create Store</h1>
 
             <div class="mb-4">
                 {#if error.length > 0}
@@ -72,7 +73,8 @@
                     </div>
                 {/if}
             </div>
-    <form on:submit|preventDefault={handleSubmit} class="bg-white shadow-md rounded px-8 pt-6 pb-8 mb-4">
+
+    <form on:submit|preventDefault={handleSubmit}>
         <div class="mb-4">
             <label class="block text-gray-700 text-sm font-bold mb-2" for="storeName">
                 Store Name
