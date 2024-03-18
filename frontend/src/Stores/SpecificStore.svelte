@@ -1,5 +1,6 @@
 <script>
   import { onMount } from 'svelte';
+  import { Link } from "svelte-routing";
   export let id;
   let specStore = null; 
   let isLoading = true; 
@@ -33,7 +34,7 @@
         <p>District: {item.district}</p>
         <a href={item.url} target="_blank" rel="noopener noreferrer" class="hover:underline text-blue-500">Visit Store</a>
         <div class="flex justify-end space-x-2 mt-2">
-          <button class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Edit</button>
+          <Link to={`/stores/${item.id}/edit`} class="px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600">Edit</Link>
           <button class="px-4 py-2 bg-red-500 text-white rounded hover:bg-red-600">Delete</button>
         </div>
       </div>
